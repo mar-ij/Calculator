@@ -1,0 +1,84 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN46QG6zhOm7CV44nW3eh9S",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mar-ij/Calculator/blob/main/Calculator\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "    a = int(input(\"Enter your first number: \"))\n",
+        "    b = int(input(\"Enter your second number: \"))\n",
+        "\n",
+        "    operation = input(\"Choose your calculating operation (/, *, +, -, **, //, %) or type 'exit' to quit: \")\n",
+        "\n",
+        "    if operation.lower() == \"exit\":\n",
+        "        print(\"Calculator exiting. Goodbye!\")\n",
+        "        break  # لوپ ختم کردے گا\n",
+        "\n",
+        "    if operation == \"/\":\n",
+        "        print(a / b if b != 0 else \"Error: Division by zero is not allowed.\")\n",
+        "    elif operation == \"*\":\n",
+        "        print(a * b)\n",
+        "    elif operation == \"+\":\n",
+        "        print(a + b)\n",
+        "    elif operation == \"-\":\n",
+        "        print(a - b)\n",
+        "    elif operation == \"**\":\n",
+        "        print(a ** b)\n",
+        "    elif operation == \"//\":\n",
+        "        print(a // b if b != 0 else \"Error: Division by zero is not allowed.\")\n",
+        "    elif operation == \"%\":\n",
+        "        print(a % b if b != 0 else \"Error: Modulo by zero is not allowed.\")\n",
+        "    else:\n",
+        "        print(\"Invalid input. Please choose a valid operation.\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "4MUbc--AC7eg",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1c729366-b827-4e9d-b590-dd555161e23d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter your first number: 4\n",
+            "Enter your second number: 5\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
